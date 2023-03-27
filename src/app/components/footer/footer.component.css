@@ -1,0 +1,39 @@
+footer {
+    height: 100px;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    background-color: var(--neutral-button);
+    width: 65.86px;
+    height: 65.86px;
+    cursor: pointer;
+}
+
+.green ::after, .green :active, .green:hover{
+    background-color: var(--vert);
+}
+
+.yellow ::after, .yellow :active, .yellow:hover{
+    background-color: var(--jaune);
+}
+
+.pink ::after, .pink :active, .pink:hover{
+    background-color: var(--rose);
+}
+
+.vector {
+    padding: 5px;
+}

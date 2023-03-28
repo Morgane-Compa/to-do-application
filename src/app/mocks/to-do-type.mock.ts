@@ -3,7 +3,8 @@ type CategoryType = "shopping" | "health" | "work" | "bills" | "cleaning" | "oth
 interface ITodo {
 id: number;
 content: string;
-category: CategoryType;
+// category: CategoryType;
+category: string;
 isUrgent: boolean;
 doneDate: Date;
 isDone: boolean

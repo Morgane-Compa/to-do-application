@@ -4,6 +4,7 @@ import { CreationTasksComponent } from './pages/creation-tasks/creation-tasks.co
 import { HistoryTasksComponent } from './pages/history-tasks/history-tasks.component';
 import { ToDoTaskComponent } from './pages/to-do-task/to-do-task.component';
 
+
 const routes: Routes = [
   {
     path: "",

@@ -1,11 +1,11 @@
 type CategoryType = "shopping" | "health" | "work" | "bills" | "cleaning" | "other";
 
-interface ITodo {
+interface Task {
 id: number;
 content: string;
 // category: CategoryType;
 category: string;
 isUrgent: boolean;
-doneDate: Date;
+doneDate: number;
 isDone: boolean
 }

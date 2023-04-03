@@ -1,1 +1,32 @@
-<p>creation-tasks works!</p>
+<section>
+    <h2>Sélectionnez votre catégorie :</h2>
+    <div class="container">
+        <div class="categorys" *ngFor="let item of categorys">
+            <input type="radio" name="task_category"
+                id="{{item}}" class="categoryButton" value="{{item}}"
+                (click)="selectCategory(item)">
+            <label class="categoryLabel" name="task_category"
+                for="{{item}}">{{item}}</label>
+        </div>
+    </div>
+
+    <h2>Quelle tâche avez-vous à effectuer ?</h2>
+    <div class="taskDescription">
+        <textarea for="task_description" 
+            placeholder="Exemple : Faire les courses">
+        </textarea>
+    </div>
+
+    <div class="isUrgent">
+        <input type="checkbox" class="checkbox-round"/>
+        <label for="task_urgent" >La tâche est urgente ⚠️</label>
+    </div>
+</section>
+
+
+<div class="center">
+    <button type="submit" class="create">
+        <a routerLink=""> Valider ma tâche</a>
+    </button>
+</div>
+

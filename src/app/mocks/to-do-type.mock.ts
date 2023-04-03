@@ -1,6 +1,6 @@
 type CategoryType = "shopping" | "health" | "work" | "bills" | "cleaning" | "other";
 
-interface Task {
+export interface Task {
 id: number;
 content: string;
 // category: CategoryType;
